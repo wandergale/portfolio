@@ -4,16 +4,12 @@
   font-family: helvetica;
 }
 
-img {
-  max-width: 50px;
-}
-
 .container {
   background-color: #000;
   border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 5px #000;
 
-  & ul {
+  & .desktop {
     width: 100%;
     list-style: none;
     display: flex;
@@ -32,11 +28,18 @@ img {
     display: flex;
     align-items: center;
     color: #fff;
+    transition: 0.5s;
   }
 
   & .link_:hover {
     background-color: #f0f0f0;
     color: #000;
+    transition: 0.5s;
+    transform: translateX(-10px);
+  }
+
+  & img {
+    max-width: 50px;
     transition: 0.5s;
   }
 
@@ -48,5 +51,40 @@ img {
 
   & li:first-child {
     margin-right: auto;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 70vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #000;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+
+  & li {
+    width: 100%;
+  }
+
+  & a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  body .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }

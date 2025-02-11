@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div>
+      <div className={style.bodyContainer}>
         <p>
           Olá<span>👋</span> sou Wanderson
         </p>

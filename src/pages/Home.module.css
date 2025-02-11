@@ -1,3 +1,7 @@
 body {
-  min-height: 100vh;
+  min-height: 250vh;
+}
+
+.bodyContainer {
+  margin-top: 20px;
 }
