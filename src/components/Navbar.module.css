@@ -54,6 +54,10 @@
   }
 }
 
+.menuBtn {
+  display: none;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -78,8 +82,12 @@
 }
 
 @media (max-width: 750px) {
-  body .hideOnMobile {
+  .hideOnMobile {
     display: none;
+  }
+
+  .menuBtn {
+    display: block;
   }
 }
 

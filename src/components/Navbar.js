@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Mobile */}
       <ul ref={sidebarRef} className={style.sidebar}>
         <li>
-          <a onClick={hideSidebar}>
+          <a href="/#" onClick={hideSidebar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="26px"
@@ -74,8 +74,8 @@ const Navbar = () => {
             Contact
           </a>
         </li>
-        <li>
-          <a onClick={showSidebar}>
+        <li className={style.menuBtn}>
+          <a href="/#" onClick={showSidebar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="26px"
